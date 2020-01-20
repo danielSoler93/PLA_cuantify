@@ -13,7 +13,7 @@ coming out from a PLA experiment in a certain part of the image (user's choice).
 Usage
 =======
 
-python -m /path/to/cuantify.py ~/path/to/.jpg
+python /path/to/cuantify.py ~/path/to/.jpg
 
 .. toctree::
    :maxdepth: 2
