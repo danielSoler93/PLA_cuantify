@@ -9,21 +9,15 @@ Welcome to pla_image_cuantify's documentation!
 This Python package help users to cuantify the amount of red-signal
 coming out from a PLA experiment in a certain part of the image (user's choice).
 
+.. figure:: images/PLA_cuantify.gif
+    :align: center
+
 
 Usage
 =======
 
-python /path/to/cuantify.py ~/path/to/.jpg
+::
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    git clone https://github.com/danielSoler93/PLA_cuantify.git
+    python PLA_cuantify/PLA_cuantify/cuantify.py ~/path/to/.jpg
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
