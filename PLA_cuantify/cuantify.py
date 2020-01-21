@@ -76,24 +76,3 @@ if __name__ == "__main__":
     img = parse_args()
     main(img)
 
-    im = Image.open(img)
-    rgb_im = im.convert('RGB')
-    plot = Event(rgb_im)
-    img = mpimg.imread(img)
-
-    fig, current_ax = plt.subplots()
-    plt.imshow(img)
-    # Plot Callbacks
-    cidpress = fig.canvas.mpl_connect('button_press_event', plot.on_press)
-    cidrealese= fig.canvas.mpl_connect('button_release_event', plot.on_release)
-    toggle_selector.RS = RectangleSelector(current_ax, line_select_callback,
-                             drawtype='box', useblit=True,
-                             button=[1, 3],  # don't use middle button
-                             minspanx=5, minspany=5,
-                             spancoords='pixels',
-                             interactive=False)
-    plt.show()
-
-
-
-
